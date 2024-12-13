@@ -11,8 +11,8 @@
     android:gravity="center">
 
     <ImageButton
-        android:layout_width="86dp"
-        android:layout_height="44dp"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
         android:layout_margin="20dp"
         android:background="@drawable/play"
         android:onClick="startGame" />

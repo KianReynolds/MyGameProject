@@ -9,11 +9,11 @@ import java.util.List;
 
 public class GameView extends View {
 
-    List<Integer> colorSequence = new ArrayList<>();
-    colorSequence.add(Color.RED);
-    colorSequence.add(Color.BLUE);
-    colorSequence.add(Color.GREEN);
-    colorSequence.add(Color.YELLOW);
+    //List<Integer> colorSequence = new ArrayList<>();
+    //colorSequence.add(Color.RED);
+    //colorSequence.add(Color.BLUE);
+    //colorSequence.add(Color.GREEN);
+    //colorSequence.add(Color.YELLOW);
 
 
 
