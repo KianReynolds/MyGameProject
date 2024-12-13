@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
-public class HighScoresActivity extends AppCompatActivity {
+public class HighScoreActivity extends AppCompatActivity {
     private HighScoreDatabase dbHelper;
     private ListView highScoreListView;
     private Button backToMainButton;
@@ -25,7 +25,7 @@ public class HighScoresActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_high_scores);
+        setContentView(R.layout.activity_high_score);
 
         // Initialize database helper
         dbHelper = new HighScoreDatabase(this);
@@ -42,7 +42,7 @@ public class HighScoresActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Return to main activity
-                Intent intent = new Intent(HighScoresActivity.this, MainActivity.class);
+                Intent intent = new Intent(HighScoreActivity.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 finish();

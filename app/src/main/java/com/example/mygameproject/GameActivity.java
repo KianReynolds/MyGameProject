@@ -2,6 +2,7 @@ package com.example.mygameproject;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -20,7 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements SensorEventListener {
+public class GameActivity extends AppCompatActivity implements SensorEventListener {
     private GameLogic gameLogic;
     private HighScoreDatabase dbHelper;
 
@@ -158,7 +159,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     private void showHighScores() {
-        // TODO: Implement high score screen display
+        Intent intent = new Intent(this, HighScoreActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private int getColorForIndex(int index) {
